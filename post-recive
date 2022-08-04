@@ -1,0 +1,3 @@
+
+CRUMB=$(curl -s 'http://<chandana>:<116f812b9570413647d1e93d83d88680f5 >@<192.168.29.94>:<8080>/crumbIssuer/api/xml?xpath=concat(//crumbRequestField,":",//crumb)')
+curl -X POST "http://<192.168.29.94>:<8080>/job/<build-identifier>/build" --user <chandana>:<116f812b9570413647d1e93d83d88680f5> -H "$CRUMB" --data-urlencode json='{"parameter": [{"name":"environment", "value":"staging"}]}'
