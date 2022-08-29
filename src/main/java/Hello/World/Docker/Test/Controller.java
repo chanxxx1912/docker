@@ -8,7 +8,7 @@ public class Controller {
 	
 	@GetMapping(path = "/")
 	public String hello() {
-		return "Hello World version 2!";
+		return "Hello World with jenkines ,kubernetes";
 	}
 
 }
